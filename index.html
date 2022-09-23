@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/6ebb309f55.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!-- bg-[url('./notes-img.png')] bg-contain bg-center bg-no-repeat -->
+  <body class="h-screen w-full bg-gray-300">
+    <!-- Creating the input area for the todo app -->
+    <div class="my-4 flex flex-col items-center justify-center w-full gap-4 text-sm">
+        <textarea id="headingArea" class="border border-cyan-600 w-[90vw] p-2 rounded" rows="1" placeholder="Heading"></textarea>
+        <textarea id="paraArea" rows="10" class="border border-cyan-600 h-20 w-[90vw] p-2 rounded" placeholder="Description"></textarea>
+        <button onclick="generateElement()" class="border border-cyan-600 w-fit px-6 rounded text-white bg-cyan-600 hover:bg-white hover:text-black py-1 font-bold">Add</button>
+    </div>
+
+
+    <!-- Accordion HTML and CSS Code -->
+    <div id="cards" class="flex flex-col gap-4 items-center justify-center mt-10">
+        <h1 class="font-bold text-2xl text-cyan-600">YOUR TODO</h1>
+    </div>
+    
+  </body>
+  <script src="./script.js"></script>
+</html>
